@@ -1,0 +1,9 @@
+<!--"./"表示在同级目录-->
+{% extends ./03base.html %}
+
+{% block tt%} Extend {% end %}
+
+{% block bb %}
+    {% include ./05include.html %}   <!-- 导入模板,类似import -->
+        this is Extend
+{% end %}
